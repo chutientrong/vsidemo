@@ -10,15 +10,14 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
-  flex: 0 0 calc(50% - 20px);
 }
 
 .normal,
-.supreme, .standard {
+.supreme,
+.standard {
   width: 352px;
   height: 480px;
-  box-shadow:
-      0 4px 6px hsl(0deg 0% 0% / 0.3);
+  box-shadow: 0 4px 6px hsl(0deg 0% 0% / 0.3);
 }
 
 .normal {
@@ -36,10 +35,23 @@
   background-color: #fad105;
   border-radius: 20px;
   box-shadow: 2px 6px 6px 1px hsl(0deg 0% 0% / 0.3);
+  .detail_container{
 
+    .category,
+    .price,
+    .status {
+      color: black;
+      font-weight: 700;
+    }
+    .status {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
 }
 
 .detail_container {
+  z-index: 1;
   position: relative;
   margin: 24px 0 0 12px;
   gap: 24px;
@@ -54,22 +66,22 @@
     gap: 8px;
     position: relative;
   }
-  
+
   .category,
   .price,
   .status {
     color: white;
     font-weight: 700;
   }
-  
+
   .category {
     font-size: 20px;
   }
-  
+
   .price {
     font-size: 56px;
   }
-  
+
   .status {
     font-size: 18px;
     font-weight: 400;
@@ -105,7 +117,7 @@
     gap: 8px 24px;
     margin-bottom: 24px;
   }
-  
+
   .service_item {
     display: inline-flex;
     flex-direction: column;
@@ -113,7 +125,7 @@
     gap: 8px;
     position: relative;
   }
-  
+
   .room_text {
     font-size: 16px;
     font-weight: 400;
@@ -141,29 +153,27 @@
 
 /* Small Mobile */
 @media (max-width: 576px) {
-  .card{
+  .card {
     border-radius: 20px;
   }
   .standard {
-    box-shadow:
-    0 4px 6px hsl(0deg 0% 0% / 0.3);
+    box-shadow: 0 4px 6px hsl(0deg 0% 0% / 0.3);
   }
 }
 
 /* Mobile */
 @media (max-width: 700px) {
-  .card{
+  .card {
     border-radius: 20px;
   }
   .standard {
-    box-shadow:
-    0 4px 6px hsl(0deg 0% 0% / 0.3);
+    box-shadow: 0 4px 6px hsl(0deg 0% 0% / 0.3);
   }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .card{
+  .card {
     border-radius: 20px;
   }
   .standard {
@@ -173,7 +183,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 1120px){
+@media (min-width: 1120px) {
   .standard {
     width: 432px;
     height: 568px;
@@ -181,35 +191,45 @@
     background-color: #fad105;
     border-radius: 20px;
     box-shadow: 2px 6px 6px 1px hsl(0deg 0% 0% / 0.3);
-  
+
     .detail_container {
       margin: 24px 0 0 12px;
       gap: 32px;
       position: relative;
-  
+
       .image {
         width: 160px;
         height: 220px;
       }
-  
+
       .category,
       .price,
       .status {
         color: black;
         font-weight: 700;
       }
-  
+
       .category {
         font-size: 24px;
       }
-    
+
       .price {
         font-size: 64px;
       }
-    
+
       .status {
         font-size: 20px;
         font-weight: 400;
       }
-    }}
+    }
+
+    .ellipse {
+      border-radius: 599.5px/339.5px;
+      height: 679px;
+      left: -244px;
+      position: absolute;
+      top: 262px;
+      width: 1199px;
+    }
+  }
 }
