@@ -1,0 +1,50 @@
+.text {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.maxline1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.maxline2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.maxline3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.maxline4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.division {
+  background-color: #dadada;
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+/* .button {
+  font-size: 12px;
+  font-weight: 500;
+} */
