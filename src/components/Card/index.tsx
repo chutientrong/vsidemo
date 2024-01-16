@@ -41,7 +41,7 @@ export const Card = ({ data }: { data: CardTypes }) => {
                   <Text
                     className={styles.room_text}
                   >{`${service.name} - $${service.price}`}</Text>
-                  {service.id > 4 ? <></> : <Division></Division>}
+                  {service.id % 3 === 0 ? <></> : <Division></Division>}
                 </div>
               );
             })}
