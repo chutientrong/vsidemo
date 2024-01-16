@@ -8,13 +8,12 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 352px 432px 352px;
   max-width: 100%;
-  width: var(--max-width);
+  display: grid;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  grid-template-columns: 352px 432px 352px;
+  width: var(--max-width);
 }
 
 /* Mobile */
@@ -22,10 +21,10 @@
   .main {
     padding: 1rem;
   }
+  
   .grid {
     grid-template-columns: 1fr;
     max-width: 352px;
-    
     gap: 24px;
   }
 }
@@ -37,14 +36,13 @@
   }
   .grid {
     grid-template-columns: repeat(2, 50%);
-
     gap: 24px;
   }
 }
+
 /* Desktop */
 @media (min-width: 1120px) {
   .main {
     padding: 1rem 0;
   }
-
 }

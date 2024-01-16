@@ -37,7 +37,10 @@ export const Card = ({ data }: { data: CardTypes }) => {
           <div className={styles.service_grid}>
             {data.services.map((service: ServicesTypes) => {
               return (
-                <div key={`index-${service.id}`} className={styles.service_item}>
+                <div
+                  key={`index-${service.id}`}
+                  className={styles.service_item}
+                >
                   <Text
                     className={styles.room_text}
                   >{`${service.name} - $${service.price}`}</Text>
@@ -46,7 +49,7 @@ export const Card = ({ data }: { data: CardTypes }) => {
               );
             })}
           </div>
-        <button className={styles.enquire_button}>{'ENQUIRE NOW'}</button>
+          <button className={styles.enquire_button}>{"ENQUIRE NOW"}</button>
         </div>
         <div className={styles.ellipse}></div>
         {/* <h2>

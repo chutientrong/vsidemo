@@ -15,11 +15,6 @@ type ServicesTypes = {
   price: number;
 };
 
-type CardPositionType = "left" | "center" | "right";
-
-export interface ICardPosition {
-  positionType: CardPositionType;
-}
 enum TextMaxLine {
   one = 1,
   two = 2,
@@ -36,14 +31,14 @@ type TextProps = {
   maxline?: TextMaxLine;
 };
 
-type ButtonPropTypes = BasePropsType & React.ButtonHTMLAttributes<HTMLButtonElement>
+type ButtonPropTypes = BasePropsType &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 type TextPropTypes = BasePropsType & TextProps;
 
 export type {
   CardTypes,
   ServicesTypes,
-  CardPositionType,
   TextPropTypes,
   ButtonPropTypes,
 };
